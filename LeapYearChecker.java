@@ -6,14 +6,10 @@ public class LeapYearChecker {
         System.out.print("Enter a year: ");
         int year = sc.nextInt();
 
-        boolean isLeap = false;
-
-        if (year % 4 == 0 ) {
-            isLeap = true;
-        }
-        if (isLeap) {
+        if (year % 4 == 0 && year % 100 !=0 ) {
             System.out.println(year + " is a Leap Year.");
-        } else {
+        }
+        else {
             System.out.println(year + " is Not a Leap Year.");
         }
     }
